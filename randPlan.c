@@ -24,7 +24,6 @@ void main(){
 		printf("random %d = %d\n", i, arr1[i]);
 	}
 	printf("\nwriting numbers to file...\n");
-	
 	int filedescW = open("numbers.txt", O_CREAT | O_RDWR, 0666);
 	int dataW = write(filedescW, arr1, 40);
 	close(filedescW);
